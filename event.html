@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>event booking </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body{
+      background-image: url('img/hD2kRs.jpg');
+      margin: 0;
+    font-family: cursive;
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.5;
+    color:white;
+    text-align: left;
+    background-color: #fff;
+    }
+    /*-- DJ form CSS --*/
+    
+    form.Signup {
+        border: 1px solid #ddd;
+        padding: 0px 20px;
+        margin: 50px 0px;
+    }
+    .Signup a {
+        color: #9c27b0;
+    }
+    .Signup .btn {
+        width: 100%;
+        margin: 10px 0px;
+        font-size: 18px;
+        background-color: #9c27b0;
+        border: none;
+    }
+    label.term-policy {
+        font-weight: 500;
+        margin: 10px 0px 0px;
+    }
+    .Signup .choose-icon {
+        float: right;
+        margin-top: -38px;
+        background-color: #f5f5f5;
+        padding: 7px 15px;
+        height: 38px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        border: 2px solid #ccc;
+        position: relative;
+        z-index: 999;
+    }
+    .Signup #Profile-pic {
+        padding-left: 3px;
+        padding-top: 3px;
+    }
+    .Signup h3 {
+        margin: 20px 0px 30px;
+        padding: 0px 0px 25px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+         color: white;
+    }
+    p.not-yet {
+        text-align: center;
+    }
+    input[type=submit] {
+        background-color: #62529c;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+
+<body>
+  <nav class="nav" id="navbar">
+    <div id ="logo">
+        <img src="img/logo2.jpeg" alt="">
+    </div>
+    <ul>
+
+			<li><a href="home.html" class="ch">Home</a></li>
+			<li><a href="about.html" class="ch">About</li>
+			<li><a href="contactus.html" class="ch">contectus</a></li>
+			<li><a href="event.html" class="ch">event</a></li>
+		
+		</ul>
+</nav>
+  <div class="container">   
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <!-- Sign Up form -->
+        <form action="#" class="Signup">
+          <h3>Dj Booking Form</h3>
+          <div class="form-group">
+              <label for="Function">1.Function</label>
+              <select  class="form-control" required>
+                <option selected>Please select</option>
+                <option value="1">Wedding celebration</option>
+                <option value="2">Birthday party</option>
+                <option value="3">Anniversaries</option>
+                <option value="4">Victory celebration</option>
+                <option value="5">Parivate parties</option>
+                <option value="6">Reception</option>
+                <option value="7">Bachelor's party</option>
+              </select>
+         
+
+          </div>
+          <div class="form-group">
+              <label for="date">Date</label>
+            <input type="datetime-local" class="form-control" required>
+          </div>      
+          <div class="form-group">
+              <label for="detils">Desired music to play</label>
+          <textarea name="detils"  cols="3" rows="3" class="form-control" ></textarea>
+          </div>   
+          <div class="form-group">
+            <label for="price">Overall budget</label>
+            <input type="number" class="form-control"   required>
+          </div>
+          <div class="form-group">
+            <label for="detils">Contact info</label>
+            <input type="text" class="form-control" placeholder="Enter Full Name"  required>
+            
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="abc@gmail.com"  required>
+           
+          </div>
+          <div class="form-group">
+            <label for="number">Phone number</label>
+            <input type="tel" class="form-control" placeholder=""  required>
+
+            
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea name="address"  cols="3" rows="3" class="form-control" ></textarea> 
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
